@@ -366,11 +366,16 @@
 	<div id="toTop"></div><!-- Back to top button -->
 
 	<!-- COMMON SCRIPTS -->
-	<script src="js/common_scripts.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{{asset('assets/client/js/common_scripts.min.js')}}"></script>
+    <script src="{{asset('assets/client/js/main.js')}}"></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="{{asset('assets/client/js/sticky_sidebar.min.js')}}"></script>
+	<script src="{{asset('assets/client/js/specific_listing.js')}}"></script>
+	<script src="{{asset('assets/client/js/carousel-home.min.js')}}"></script>
 
 	<!-- SPECIFIC SCRIPTS -->
-	<script src="js/carousel-home.min.js"></script>
+	
 
 </body>
 

@@ -22,8 +22,8 @@
                 <span>Quản lý người dùng</span>
             </a>
             <ul>
-                <li><a class="active" href="{{ url('admin/users') }}">Danh sách</a></li>
-                <li><a href="index_2.html">Thêm mới</a></li>
+                <li><a class="" href="{{ url('admin/users') }}">Danh sách</a></li>
+                <li><a href="{{url('admin/users/create')}}">Thêm mới</a></li>
             </ul>
         </li>
         <li class="mm-active">
@@ -34,7 +34,7 @@
                 <span>Quản lý Danh mục</span>
             </a>
             <ul>
-                <li><a class="active" href="index-2.html">Sales</a></li>
+                <li><a class="" href="{{ url('admin/categories') }}">Danh sách</a></li>
                 <li><a href="index_2.html">Default</a></li>
                 <li><a href="index_3.html">Dark Menu</a></li>
             </ul>

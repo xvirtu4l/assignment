@@ -12,14 +12,15 @@
 
 use Asm\Final\Controllers\Admin\DashboardController;
 use Asm\Final\Controllers\Admin\UserController;
+use Asm\Final\Controllers\Admin\CategoryController;
 use Asm\Final\Controllers\Admin\ProductController;
 
-// $router->before('GET|POST', '/admin/*.*', function() {
-//     if (! isset($_SESSION['user'])) {
-//         header('location: ' . url('login') );
-//         exit();
-//     }
-// });
+$router->before('GET|POST', '/admin/*.*', function() {
+    if (! isset($_SESSION['user'])) {
+        header('location: ' . url('login') );
+        exit();
+    }
+});
 
 $router->mount('/admin', function () use ($router) {
 
@@ -44,6 +45,16 @@ $router->mount('/admin', function () use ($router) {
         $router->get('/{id}/edit',      ProductController::class . '@edit');
         $router->post('/{id}/update',   ProductController::class . '@update');
         $router->get('/{id}/delete',    ProductController::class . '@delete');
+    });
+
+    $router->mount('/categories', function () use ($router) {
+        $router->get('/',               CategoryController::class . '@index');
+        $router->get('/create',         CategoryController::class . '@create');
+        $router->post('/store',         CategoryController::class . '@store');
+        $router->get('/{id}/show',      CategoryController::class . '@show');
+        $router->get('/{id}/edit',      CategoryController::class . '@edit');
+        $router->post('/{id}/update',   CategoryController::class . '@update');
+        $router->get('/{id}/delete',    CategoryController::class . '@delete');
     });
     
 });
