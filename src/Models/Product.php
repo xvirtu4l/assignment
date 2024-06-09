@@ -140,4 +140,20 @@ class Product extends Model
             ->groupBy('c.id')
             ->fetchAssociative();
     }
+
+    public function top8Items()
+{
+    return $this->queryBuilder
+        ->select(
+            'p.name',
+            'c.name as c_name',
+            'p.price_regular',
+            'p.price_sale'
+        )
+        ->from($this->tableName, 'p')
+        ->innerJoin('p', 'categories', 'c', 'c.id = p.category_id')
+        ->orderBy('p.id', 'desc')
+        ->setMaxResults(8)
+        ->fetchAllAssociative();
+}
 }

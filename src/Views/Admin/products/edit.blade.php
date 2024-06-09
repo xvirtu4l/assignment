@@ -39,8 +39,8 @@ Chỉnh sửa danh mục
                             <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" value="{{$product['name']}}">
                         </div>
                         <div class="mb-3 mt-3">
-                            <label for="name" class="form-label">Category:</label>
-                            <select name="category" id="category">
+                            <label for="category_id" class="form-label">Category:</label>
+                            <select name="category_id" id="category_id">
                                 @foreach ($categoryPluck as $id => $name)
                                     <option 
                                         @if ($id == $product['category_id'])

@@ -73,6 +73,15 @@
 										<a href="{{url('products')}}" class="">Products</a>
 										<!-- /menu-wrapper -->
 									</li>
+									@if (isset($_SESSION['user']))
+										<li class="">
+											<a href="{{ url('/logout') }}" class="">Logout</a>
+										</li>
+									@else
+										<li class="">
+											<a href="{{ url('/login') }}" class="">Login</a>
+										</li>
+									@endif
 								</ul>
 							</div>
 							<!--/main-menu -->
@@ -121,13 +130,13 @@
 							<ul class="top_tools">
 								<li>
 									<div class="dropdown dropdown-cart">
-										<a href="cart.html" class="cart_bt"><strong>2</strong></a>
+										<a href="" class="cart_bt"></a>
 									</div>
 									<!-- /dropdown-cart-->
 								</li>
 								<li>
 									<div class="dropdown dropdown-access">
-										<a href="account.html" class="access_link"><span>Account</span></a>
+										<a href="{{url('login')}}" class="access_link"><span>Account</span></a>
 									</div>
 									<!-- /dropdown-access-->
 								</li>

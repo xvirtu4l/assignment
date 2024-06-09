@@ -153,7 +153,7 @@
 			<ul id="banners_grid" class="clearfix">
 				<li>
 					<a href="{{ url('products') }}" class="img_container">
-						<img src="img/banners_cat_placeholder.jpg" data-src="img/banner_1.jpg" alt="" class="lazy">
+						<img src="{{asset('assets/img/iphone__ky2k6x5u6vue_og.jpg')}}"  alt="" class="lazy">
 						<div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
 							<h3>Phone's Collection</h3>
 							<div><span class="btn_1">Shop Now</span></div>
@@ -162,7 +162,7 @@
 				</li>
 				<li>
 					<a href="{{ url('products') }}" class="img_container">
-						<img src="img/banners_cat_placeholder.jpg" data-src="img/banner_2.jpg" alt="" class="lazy">
+						<img src="{{asset('assets/img/pc.jpg')}}"  alt="" class="lazy">
 						<div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
 							<h3>PC's Collection</h3>
 							<div><span class="btn_1">Shop Now</span></div>
@@ -171,7 +171,7 @@
 				</li>
 				<li>
 					<a href="{{ url('products') }}" class="img_container">
-						<img src="img/banners_cat_placeholder.jpg" data-src="img/banner_3.jpg" alt="" class="lazy">
+						<img src="{{asset('assets/img/download.jpg')}}"  class="lazy">
 						<div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
 							<h3>Laptop's Collection</h3>
 							<div><span class="btn_1">Shop Now</span></div>

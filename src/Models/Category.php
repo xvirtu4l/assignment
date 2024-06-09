@@ -27,4 +27,19 @@ class Category extends Model
 
         return [$data, $totalPage];
     }
+
+    public function countByCategory()
+{
+    return $this->queryBuilder
+        ->select(
+            'c.id as id',
+            'c.name as name',
+            'COUNT(p.id) as product_count'
+        )
+        ->from($this->tableName, 'c')
+        ->innerJoin('c', 'products', 'p', 'c.id = p.category_id')
+        ->groupBy('c.id', 'c.name')
+        ->orderBy('c.id', 'asc')
+        ->fetchAllAssociative();
+}
 }

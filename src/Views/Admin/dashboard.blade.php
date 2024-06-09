@@ -11,9 +11,7 @@ Dashboard
             <div class="page_title_left">
                 <h3 class="f_s_30 f_w_700 text_white">Dashboard</h3>
                 <ol class="breadcrumb page_bradcam mb-0">
-                    <li class="breadcrumb-item"><a href="">Users </a></li>
                     <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Sales</li>
                 </ol>
             </div>
         </div>
@@ -46,18 +44,20 @@ Dashboard
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <div class="customer d-flex align-items-center">
-                                    <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50"
-                                            src="{{ asset('assets/admin/img/customers/pro_1.png') }}" alt></div>
-                                    <span class="f_s_14 f_w_400 color_text_1">Product 1</span>
-                                </div>
-                            </td>
-                            <td class="f_s_14 f_w_400 color_text_2">$564</td>
-                            <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
-                            </td>
-                        </tr>
+                        @foreach ($products as $values)
+                            <tr>
+                                <td>
+                                    <div class="customer d-flex align-items-center">
+                                        <span class="f_s_14 f_w_400 color_text_1">{{$values['name']}}</span>
+                                    </div>
+                                </td>
+                                <td class="f_s_14 f_w_400 color_text_2">{{$values['c_name']}}</td>
+                                <td class="f_s_14 f_w_400 color_text_3">{{$values['price_regular']}}</td>
+                                <td class="f_s_14 f_w_400 color_text_3">{{$values['price_sale']}}</td>
+                                </td>
+
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -65,39 +65,44 @@ Dashboard
     </div>
 </div>
 <div class="col-md-4">
-        <div class="white_card card_height_100 mb_20 ">
-            <div class="white_card_header">
-                <div class="box_header m-0">
-                    <div class="main-title">
-                        <h3 class="m-0">Danh mục</h3>
-                    </div>
-                    <div class="header_more_tool">
-                        <div class="dropdown">
-                            </span>
-                        </div>
-                    </div>
+    <div class="white_card card_height_100 mb_20 ">
+        <div class="white_card_header">
+            <div class="box_header m-0">
+                <div class="main-title">
+                    <h3 class="m-0">Danh mục</h3>
                 </div>
-            </div>
-            <div class="white_card_body QA_section">
-                <div class="QA_table ">
-                    <table class="table lms_table_active2 p-0">
-                        <thead>
-                            <tr>
-                                <th scope="col">Tên danh mục</th>
-                                <th scope="col">Tổng sản phẩm</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="f_s_14 f_w_400 color_text_2">$564</td>
-                                <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="header_more_tool">
+                    <div class="dropdown">
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="white_card_body QA_section">
+            <div class="QA_table ">
+                <table class="table lms_table_active2 p-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID danh mục</th>
+                            <th scope="col">Tên danh mục</th>
+                            <th scope="col">Tổng sản phẩm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @foreach ($categories as $category)
+                                <tr>
+                                    <td>{{ $category['id'] }}</td>
+                                    <td>{{ $category['name'] }}</td>
+                                    <td>{{ $category['product_count'] }}</td>
+                                </tr>
+                            @endforeach
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
+</div>
 
 @endsection
