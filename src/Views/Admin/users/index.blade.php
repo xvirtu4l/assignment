@@ -68,6 +68,23 @@
 
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    
+
+                                    <!-- Các nút số trang -->
+                                    @for ($i = 1; $i <= $totalPage; $i++)
+                                        <li class="page-item{{ $currentPage == $i ? ' active' : '' }}">
+                                            <a class="page-link" href="{{ url('admin/users?page=' . $i) }}">{{ $i }}</a>
+                                        </li>
+                                    @endfor
+
+                                    
+                                    
+                                </ul>
+                            </nav>
+                    </div>
                     </div>
                 </div>
             </div>

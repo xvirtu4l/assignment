@@ -22,14 +22,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="(/css/bootstrap.min.css)" rel="stylesheet">
+    <link href="('/css/style.css')" rel="stylesheet">
 
 	<!-- SPECIFIC CSS -->
-    <link href="../assets/css/product_page.css" rel="stylesheet">
+    <link href="('/css/product_page.css')" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="(/css/custom.css)" rel="stylesheet">
 
 </head>
 

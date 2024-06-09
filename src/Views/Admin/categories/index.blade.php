@@ -17,7 +17,7 @@
                 </div>
                 <div class="white_card_body">
 
-                    <a class="btn btn-primary" href="{{ url('admin/categorys/create') }}">Thêm mới</a>
+                    <a class="btn btn-primary" href="{{ url('admin/categories/create') }}">Thêm mới</a>
 
                     @if (isset($_SESSION['status']) && $_SESSION['status'])
                         <div class="alert alert-success">
@@ -62,6 +62,22 @@
 
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    
+
+                                    <!-- Các nút số trang -->
+                                    @for ($i = 1; $i <= $totalPage; $i++)
+                                        <li class="page-item{{ $currentPage == $i ? ' active' : '' }}">
+                                            <a class="page-link" href="{{ url('admin/categories?page=' . $i) }}">{{ $i }}</a>
+                                        </li>
+                                    @endfor
+
+                                    
+                                    
+                                </ul>
+                            </nav>
                     </div>
                 </div>
             </div>

@@ -1,40 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chi tiết người dùng: {{ $user['name'] }}</title>
+@section('title')
+Chi tiết người dùng
+@endsection
 
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+@section('content')
+<div class="row justify-content-center">
+    <div class="col-lg-12">
+        <div class="white_card card_height_100 mb_30">
+            <div class="white_card_header">
+                <div class="box_header m-0">
+                    <div class="main-title">
+                        <h1 class="m-0">Chi tiết người dùng {{ $user['name'] }}</h1>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+            <div class="white_card_body">
 
-<body>
-    <h1>Chi tiết người dùng: {{ $user['name'] }}</h1>
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Trường</th>
-                <th>Giá trị</th>
-            </tr>
-        </thead>
-        <tbody>
-
-            @foreach ($user as $field => $value)
-                <tr>
-                    <td>{{ $field }}</td>
-                    <td>{{ $value }}</td>
-                </tr>
-            @endforeach
-
-        </tbody>
-    </table>
-</body>
-
-</html>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Trường</th>
+                                <th>Giá trị</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach ($user as $field => $value)
+                                @if ($field !== 'password')
+                                    <tr>
+                                        <td>{{ $field }}</td>
+                                        @if ($field === 'avatar' && $value !== null)
+                                            <td><img src="{{ $value }}" alt="Avatar" style="width: 100px; height: 100px;"></td>
+                                        @elseif ($field === 'avatar' && $value === null)
+                                            <td>No Avatar</td>
+                                        @else
+                                            <td>{{ $value }}</td>
+                                        @endif
+                                    </tr>
+                                @endif
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
