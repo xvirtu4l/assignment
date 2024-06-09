@@ -24,14 +24,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 	<!-- BASE CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="{{asset('assets/client/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('assets/client/css/style.css')}}" rel="stylesheet">
 
 	<!-- SPECIFIC CSS -->
-	<link href="assets/css/home_1.css" rel="stylesheet">
+	<link href="{{asset('assets/client/css/home_1.css')}}" rel="stylesheet">
 
 	<!-- YOUR CUSTOM CSS -->
-	<link href="assets/css/custom.css" rel="stylesheet">
+	<link href="{{asset('assets/client/css/custom.css')}}" rel="stylesheet">
 
 </head>
 
@@ -46,7 +46,7 @@
 					<div class="row small-gutters">
 						<div class="col-xl-3 col-lg-3 d-lg-flex align-items-center">
 							<div id="logo">
-								<a href="index.html"><img src="img/logo.svg" alt="" width="100" height="35"></a>
+								<a href="{{url()}}"><img src="{{asset('assets/img/logo.svg')}}" alt="" width="100" height="35"></a>
 							</div>
 						</div>
 						<!-- Mobile menu button -->
@@ -70,7 +70,7 @@
 										<a href=" {{ url() }} " class="">Home</a>
 									</li>
 									<li class="">
-										<a href="" class="">Pages</a>
+										<a href="{{ url('products') }}" class="">Products</a>
 										<!-- /menu-wrapper -->
 									</li>
 									@if (isset($_SESSION['user']))
@@ -104,18 +104,10 @@
 								<ul class="clearfix">
 									<li><span>
 											<a href="#">
-												<span class="hamburger hamburger--spin">
-													<span class="hamburger-box">
-														<span class="hamburger-inner"></span>
-													</span>
-												</span>
-												Categories
 											</a>
 										</span>
 										<div id="menu">
-											<ul>
-											</ul>
-										</div>
+									</div>
 									</li>
 								</ul>
 							</nav>
@@ -130,7 +122,7 @@
 							<ul class="top_tools">
 								<li>
 									<div class="dropdown dropdown-cart">
-										<a href="cart.html" class="cart_bt"><strong>2</strong></a>
+										<a href="" class="cart_bt"></a>
 									</div>
 									<!-- /dropdown-cart-->
 								</li>
@@ -160,28 +152,28 @@
 		<main>
 			<ul id="banners_grid" class="clearfix">
 				<li>
-					<a href="#0" class="img_container">
+					<a href="{{ url('products') }}" class="img_container">
 						<img src="img/banners_cat_placeholder.jpg" data-src="img/banner_1.jpg" alt="" class="lazy">
 						<div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-							<h3>Men's Collection</h3>
+							<h3>Phone's Collection</h3>
 							<div><span class="btn_1">Shop Now</span></div>
 						</div>
 					</a>
 				</li>
 				<li>
-					<a href="#0" class="img_container">
+					<a href="{{ url('products') }}" class="img_container">
 						<img src="img/banners_cat_placeholder.jpg" data-src="img/banner_2.jpg" alt="" class="lazy">
 						<div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-							<h3>Womens's Collection</h3>
+							<h3>PC's Collection</h3>
 							<div><span class="btn_1">Shop Now</span></div>
 						</div>
 					</a>
 				</li>
 				<li>
-					<a href="#0" class="img_container">
+					<a href="{{ url('products') }}" class="img_container">
 						<img src="img/banners_cat_placeholder.jpg" data-src="img/banner_3.jpg" alt="" class="lazy">
 						<div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-							<h3>Kids's Collection</h3>
+							<h3>Laptop's Collection</h3>
 							<div><span class="btn_1">Shop Now</span></div>
 						</div>
 					</a>
@@ -192,7 +184,7 @@
 
 			<div class="container margin_60_35">
 				<div class="main_title">
-					<h2>Products</h2>
+					<h2>Top 8 Products</h2>
 
 					<p>Cum doctus civibus efficiantur in imperdiet deterruisset</p>
 				</div>
@@ -203,8 +195,7 @@
 							<div class="grid_item">
 								<figure>
 									<a href="{{ url('products/' . $values['id']) }}">
-										<img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg"
-											data-src="img/products/shoes/1.jpg" alt="">
+										<img class="img-fluid lazy" src="{{ asset($values['img_thumbnail'])}}" alt="">
 									</a>
 								</figure>
 								<a href="{{ url('products/' . $values['id']) }}">
@@ -226,7 +217,7 @@
 					@endforeach
 				</div>
 				<div class="text-center">
-					<a href=""><span class="btn_1">Browse More</span></a>
+					<a href="{{ url('products') }}"><span class="btn_1">Browse More</span></a>
 				</div>
 				<!-- /row -->
 			</div>
@@ -242,27 +233,27 @@
 				<div class="container margin_30">
 					<div id="brands" class="owl-carousel owl-theme">
 						<div class="item">
-							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="img/brands/logo_1.png"
+							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="{{asset('assets/img/brands/logo_1.png')}}"
 									alt="" class="owl-lazy"></a>
 						</div><!-- /item -->
 						<div class="item">
-							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="img/brands/logo_2.png"
+							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="{{asset('assets/img/brands/logo_2.png')}}"
 									alt="" class="owl-lazy"></a>
 						</div><!-- /item -->
 						<div class="item">
-							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="img/brands/logo_3.png"
+							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="{{asset('assets/img/brands/logo_3.png')}}"
 									alt="" class="owl-lazy"></a>
 						</div><!-- /item -->
 						<div class="item">
-							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="img/brands/logo_4.png"
+							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="{{asset('assets/img/brands/logo_4.png')}}"
 									alt="" class="owl-lazy"></a>
 						</div><!-- /item -->
 						<div class="item">
-							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="img/brands/logo_5.png"
+							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="{{asset('assets/img/brands/logo_5.png')}}"
 									alt="" class="owl-lazy"></a>
 						</div><!-- /item -->
 						<div class="item">
-							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="img/brands/logo_6.png"
+							<a href="#0"><img src="img/brands/placeholder_brands.png" data-src="{{asset('assets/img/brands/logo_6.png')}}"
 									alt="" class="owl-lazy"></a>
 						</div><!-- /item -->
 					</div>

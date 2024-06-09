@@ -2,41 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Ansonika">
-    <title>Allaia | Bootstrap eCommerce Template - ThemeForest</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Ansonika">
+	<title>Allaia | Bootstrap eCommerce Template - ThemeForest</title>
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
-	
-    <!-- GOOGLE WEB FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+		href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+		href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- BASE CSS -->
-    <link href="{{asset('assets/client/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/client/css/style.css')}}" rel="stylesheet">
+	<!-- BASE CSS -->
+	<link href="{{asset('assets/client/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('assets/client/css/style.css')}}" rel="stylesheet">
 
 	<!-- SPECIFIC CSS -->
-    <link href="{{asset('assets/client/css/listing.css')}}" rel="stylesheet">
+	<link href="{{asset('assets/client/css/listing.css')}}" rel="stylesheet">
 
-    <!-- YOUR CUSTOM CSS -->
-    <link href="{{asset('assets/client/css/custom.css')}}" rel="stylesheet">
+	<!-- YOUR CUSTOM CSS -->
+	<link href="{{asset('assets/client/css/custom.css')}}" rel="stylesheet">
 
 </head>
 
 <body>
-	
+
 	<div id="page">
-		
+
 		<header class="version_1">
 			<div class="layer"></div><!-- Mobile menu overlay mask -->
 			<div class="main_header">
@@ -44,7 +46,8 @@
 					<div class="row small-gutters">
 						<div class="col-xl-3 col-lg-3 d-lg-flex align-items-center">
 							<div id="logo">
-								<a href="{{ url() }}"><img src="{{asset('/img/logo.svg')}}" alt="" width="100" height="35"></a>
+								<a href="{{ url() }}"><img src="{{asset('assets/img/logo.svg')}}" alt="" width="100"
+										height="35"></a>
 							</div>
 						</div>
 						<nav class="col-xl-6 col-lg-7">
@@ -58,39 +61,32 @@
 							<!-- Mobile menu button -->
 							<div class="main-menu">
 								<div id="header_menu">
-									<a href="{{ url() }}"><img src="img/logo_black.svg" alt="" width="100" height="35"></a>
+									<a href="{{ url() }}"><img src="img/logo_black.svg" alt="" width="100"
+											height="35"></a>
 									<a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
 								</div>
 								<ul>
 									<li class="">
-										<a href="" class="">Home</a>
+										<a href="{{url()}}" class="">Home</a>
 									</li>
 									<li class="">
-										<a href="" class="">Pages</a>
+										<a href="{{url('products')}}" class="">Products</a>
 										<!-- /menu-wrapper -->
-									</li>
-									<li class="submenu">
-										<a href="" class="show-submenu">Extra Pages</a>
-										<ul>
-											<li><a href="404.html">404 Page</a></li>
-											<li><a href="sign-in-modal.html">Sign In Modal</a></li>
-											<li><a href="contacts.html">Contact Us</a></li>
-											<li><a href="about.html">About</a></li>
-										</ul>
 									</li>
 								</ul>
 							</div>
 							<!--/main-menu -->
 						</nav>
 						<div class="col-xl-3 col-lg-2 d-lg-flex align-items-center justify-content-end text-end">
-							<a class="phone_top" href="tel://9438843343"><strong><span>Need Help?</span>+94 423-23-221</strong></a>
+							<a class="phone_top" href="tel://9438843343"><strong><span>Need Help?</span>+94
+									423-23-221</strong></a>
 						</div>
 					</div>
 					<!-- /row -->
 				</div>
 			</div>
 			<!-- /main_header -->
-	
+
 			<div class="main_nav Sticky">
 				<div class="container">
 					<div class="row small-gutters">
@@ -135,8 +131,8 @@
 									</div>
 									<!-- /dropdown-access-->
 								</li>
-	
-	
+
+
 							</ul>
 						</div>
 					</div>
@@ -150,540 +146,99 @@
 			</div>
 			<!-- /main_nav -->
 		</header>
-	<!-- /header -->
-		
-	<main>
-		
-		<div class="container margin_30">
-		    <div class="top_banner version_2">
-		        <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0)">
-		            <div class="container">
-		                <div class="d-flex justify-content-center">
-		                    <h1>Shoes - Grid listing</h1>
-		                </div>
-		            </div>
-		        </div>
-		        <img src="img/bg_cat_shoes.jpg" class="img-fluid" alt="">
-		    </div>
-		    <!-- /top_banner -->
-		    <div id="stick_here"></div>
-		    <div class="toolbox elemento_stick version_2">
-		        <div class="container">
-		            <div class="collapse" id="filters">
-		                <div class="row small-gutters filters_listing_1">
-		                    <div class="col-lg-3 col-md-6 col-sm-6">
-		                        <div class="dropdown">
-		                            <a href="#" data-bs-toggle="dropdown" class="drop">Categories</a>
-		                            <div class="dropdown-menu">
-		                                <div class="filter_type">
-		                                    <ul>
-		                                        <li>
-		                                            <label class="container_check">Men <small>12</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Women <small>24</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Running <small>23</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Training <small>11</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                    </ul>
-		                                    <a href="#0" class="apply_filter">Apply</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <!-- /dropdown -->
-		                    </div>
-		                    <div class="col-lg-3 col-md-6 col-sm-6">
-		                        <div class="dropdown">
-		                            <a href="#" data-bs-toggle="dropdown" class="drop">Color</a>
-		                            <div class="dropdown-menu">
-		                                <div class="filter_type">
-		                                    <ul>
-		                                        <li>
-		                                            <label class="container_check">Blue <small>06</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Red <small>12</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Orange <small>17</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Black <small>43</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                    </ul>
-		                                    <a href="#0" class="apply_filter">Apply</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <!-- /dropdown -->
-		                    </div>
-		                    <div class="col-lg-3 col-md-6 col-sm-6">
-		                        <div class="dropdown">
-		                            <a href="#" data-bs-toggle="dropdown" class="drop">Brand</a>
-		                            <div class="dropdown-menu">
-		                                <div class="filter_type">
-		                                    <ul>
-		                                        <li>
-		                                            <label class="container_check">Adidas <small>11</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Nike <small>08</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Vans <small>05</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">Puma <small>18</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                    </ul>
-		                                    <a href="#0" class="apply_filter">Apply</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <!-- /dropdown -->
-		                    </div>
-		                    <div class="col-lg-3 col-md-6 col-sm-6">
-		                        <div class="dropdown">
-		                            <a href="#" data-bs-toggle="dropdown" class="drop">Price</a>
-		                            <div class="dropdown-menu">
-		                                <div class="filter_type">
-		                                    <ul>
-		                                        <li>
-		                                            <label class="container_check">$0 — $50<small>11</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">$50 — $100<small>08</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">$100 — $150<small>05</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                        <li>
-		                                            <label class="container_check">$150 — $200<small>18</small>
-		                                                <input type="checkbox">
-		                                                <span class="checkmark"></span>
-		                                            </label>
-		                                        </li>
-		                                    </ul>
-		                                    <a href="#0" class="apply_filter">Apply</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <!-- /dropdown -->
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		    <!-- /toolbox -->
+		<!-- /header -->
+
+		<main>
+
 			<div class="container margin_30">
-	        <div class="row">
-	            <aside class="col-lg-3" id="sidebar_fixed">
-	                <div class="filter_col">
-	                    <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
-	                    <div class="filter_type version_2">
-	                        <h4><a href="#filter_1" data-bs-toggle="collapse" class="opened">Categories</a></h4>
-	                        <div class="collapse show" id="filter_1">
-	                            <ul>
-	                                <li>
-	                                    <label class="container_check">Men <small>12</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Women <small>24</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Running <small>23</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Training <small>11</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                            </ul>
-	                        </div>
-	                        <!-- /filter_type -->
-	                    </div>
-	                    <!-- /filter_type -->
-	                    <div class="filter_type version_2">
-	                        <h4><a href="#filter_2" data-bs-toggle="collapse" class="opened">Color</a></h4>
-	                        <div class="collapse show" id="filter_2">
-	                            <ul>
-	                                <li>
-	                                    <label class="container_check">Blue <small>06</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Red <small>12</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Orange <small>17</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Black <small>43</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                            </ul>
-	                        </div>
-	                    </div>
-	                    <!-- /filter_type -->
-	                    <div class="filter_type version_2">
-	                        <h4><a href="#filter_3" data-bs-toggle="collapse" class="closed">Brands</a></h4>
-	                        <div class="collapse" id="filter_3">
-	                            <ul>
-	                                <li>
-	                                    <label class="container_check">Adidas <small>11</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Nike <small>08</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Vans <small>05</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">Puma <small>18</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                            </ul>
-	                        </div>
-	                    </div>
-	                    <!-- /filter_type -->
-	                    <div class="filter_type version_2">
-	                        <h4><a href="#filter_4" data-bs-toggle="collapse" class="closed">Price</a></h4>
-	                        <div class="collapse" id="filter_4">
-	                            <ul>
-	                                <li>
-	                                    <label class="container_check">$0 — $50<small>11</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">$50 — $100<small>08</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">$100 — $150<small>05</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                                <li>
-	                                    <label class="container_check">$150 — $200<small>18</small>
-	                                        <input type="checkbox">
-	                                        <span class="checkmark"></span>
-	                                    </label>
-	                                </li>
-	                            </ul>
-	                        </div>
-	                    </div>
-	                    <!-- /filter_type -->
-	                    <div class="buttons">
-	                        <a href="#0" class="btn_1">Filter</a> <a href="#0" class="btn_1 gray">Reset</a>
-	                    </div>
-	                </div>
-	            </aside>
-	            <!-- /col -->
-	            <div class="col-lg-9">
-	                <div class="row row_item">
-	                    <div class="col-sm-4">
-	                        <figure>
-	                            <span class="ribbon off">-30%</span>
-	                            <a href="product-detail-1.html">
-	                                <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/1.jpg" alt="">
-	                            </a>
-	                            <div data-countdown="2019/05/15" class="countdown"></div>
-	                        </figure>
-	                    </div>
-	                    <div class="col-sm-8">
-	                        <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
-	                        <a href="product-detail-1.html">
-	                            <h3>Armor Air x Fear</h3>
-	                        </a>
-	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-	                        <div class="price_box">
-	                            <span class="new_price">$48.00</span>
-	                            <span class="old_price">$60.00</span>
-	                        </div>
-	                        <ul>
-	                            <li><a href="#0" class="btn_1">Add to cart</a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <!-- /row_item -->
-	                <div class="row row_item">
-	                    <div class="col-sm-4">
-	                        <figure>
-	                            <span class="ribbon off">-30%</span>
-	                            <a href="product-detail-1.html">
-	                                <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/2.jpg" alt="">
-	                            </a>
-	                            <div data-countdown="2019/05/15" class="countdown"></div>
-	                        </figure>
-	                    </div>
-	                    <div class="col-sm-8">
-	                        <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
-	                        <a href="product-detail-1.html">
-	                            <h3>Armor Okwahn II</h3>
-	                        </a>
-	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-	                        <div class="price_box">
-	                            <span class="new_price">$90.00</span>
-	                            <span class="old_price">$170.00</span>
-	                        </div>
-	                        <ul>
-	                            <li><a href="#0" class="btn_1">Add to cart</a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <!-- /row_item -->
-	                <div class="row row_item">
-	                    <div class="col-sm-4">
-	                        <figure>
-	                            <span class="ribbon off">-50%</span>
-	                            <a href="product-detail-1.html">
-	                                <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/3.jpg" alt="">
-	                            </a>
-	                            <div data-countdown="2019/05/15" class="countdown"></div>
-	                        </figure>
-	                    </div>
-	                    <div class="col-sm-8">
-	                        <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
-	                        <a href="product-detail-1.html">
-	                            <h3>Armor Air Wildwood ACG</h3>
-	                        </a>
-	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-	                        <div class="price_box">
-	                            <span class="new_price">$75.00</span>
-	                            <span class="old_price">$155.00</span>
-	                        </div>
-	                        <ul>
-	                            <li><a href="#0" class="btn_1">Add to cart</a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <!-- /row_item -->
-	                <div class="row row_item">
-	                    <div class="col-sm-4">
-	                        <figure>
-	                            <span class="ribbon new">New</span>
-	                            <a href="product-detail-1.html">
-	                                <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/4.jpg" alt="">
-	                            </a>
-	                        </figure>
-	                    </div>
-	                    <div class="col-sm-8">
-	                        <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
-	                        <a href="product-detail-1.html">
-	                            <h3>Armor ACG React Terra</h3>
-	                        </a>
-	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-	                        <div class="price_box">
-	                            <span class="new_price">$110.00</span>
-	                        </div>
-	                        <ul>
-	                            <li><a href="#0" class="btn_1">Add to cart</a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <!-- /row_item -->
-	                <div class="row row_item">
-	                    <div class="col-sm-4">
-	                        <figure>
-	                            <span class="ribbon new">New</span>
-	                            <a href="product-detail-1.html">
-	                                <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/5.jpg" alt="">
-	                            </a>
-	                        </figure>
-	                    </div>
-	                    <div class="col-sm-8">
-	                        <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
-	                        <a href="product-detail-1.html">
-	                            <h3>Armor Air Zoom Alpha</h3>
-	                        </a>
-	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-	                        <div class="price_box">
-	                            <span class="new_price">$140.00</span>
-	                        </div>
-	                        <ul>
-	                            <li><a href="#0" class="btn_1">Add to cart</a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <!-- /row_item -->
-	                <div class="row row_item">
-	                    <div class="col-sm-4">
-	                        <figure>
-	                            <span class="ribbon new">New</span>
-	                            <a href="product-detail-1.html">
-	                                <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/6.jpg" alt="">
-	                            </a>
-	                        </figure>
-	                    </div>
-	                    <div class="col-sm-8">
-	                        <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
-	                        <a href="product-detail-1.html">
-	                            <h3>Armor Air Alpha</h3>
-	                        </a>
-	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-	                        <div class="price_box">
-	                            <span class="new_price">$130.00</span>
-	                        </div>
-	                        <ul>
-	                            <li><a href="#0" class="btn_1">Add to cart</a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <!-- /row_item -->
-	                <div class="row row_item">
-	                    <div class="col-sm-4">
-	                        <figure>
-	                            <span class="ribbon hot">Hot</span>
-	                            <a href="product-detail-1.html">
-	                                <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/7.jpg" alt="">
-	                            </a>
-	                        </figure>
-	                    </div>
-	                    <div class="col-sm-8">
-	                        <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
-	                        <a href="product-detail-1.html">
-	                            <h3>Armor Air 98</h3>
-	                        </a>
-	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
-	                        <div class="price_box">
-	                            <span class="new_price">$115.00</span>
-	                        </div>
-	                        <ul>
-	                            <li><a href="#0" class="btn_1">Add to cart</a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-	                            <li><a href="#0" class="btn_1 gray tooltip-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <!-- /row_item -->
-	                <div class="pagination__wrapper">
-	                    <ul class="pagination">
-	                        <li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
-	                        <li>
-	                            <a href="#0" class="active">1</a>
-	                        </li>
-	                        <li>
-	                            <a href="#0">2</a>
-	                        </li>
-	                        <li>
-	                            <a href="#0">3</a>
-	                        </li>
-	                        <li>
-	                            <a href="#0">4</a>
-	                        </li>
-	                        <li><a href="#0" class="next" title="next page">&#10095;</a></li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <!-- /col -->
-	        </div>
-	        <!-- /row -->
-	    </div>
-			<!-- /row -->
-				
-		</div>
-		<!-- /container -->
-	</main>
-	<!-- /main -->
-	
-	<footer class="revealed">
+				<div class="top_banner version_2">
+					<div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0)">
+						<div class="container">
+							<div class="d-flex justify-content-center">
+								<h1>Shoes - Grid listing</h1>
+							</div>
+						</div>
+					</div>
+					<img src="img/bg_cat_shoes.jpg" class="img-fluid" alt="">
+				</div>
+				<!-- /top_banner -->
+				<div id="stick_here"></div>
+				<div class="toolbox elemento_stick version_2">
+					<div class="container">
+						<div class="collapse" id="filters">
+							<div class="row small-gutters filters_listing_1">
+								<div class="col-lg-3 col-md-6 col-sm-6">
+									<!-- /dropdown -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /toolbox -->
+				<div class="container margin_30">
+					<div class="row">
+						<!-- /col -->
+						<div class="col-lg-9">
+							@foreach ($products as $values)
+								<div class="row row_item">
+									<div class="col-sm-4">
+										<figure>
+											<a href="{{url('products/' . $values['id']) }}">
+												<img class="img-fluid lazy" src="{{asset($values['img_thumbnail'])}}"
+													alt="">
+											</a>
+										</figure>
+									</div>
+									<div class="col-sm-8">
+										<a href="{{url('products/' . $values['id']) }}">
+											<h3>{{$values['name']}}</h3>
+										</a>
+										<p>{{ $values['overview'] }}</p>
+										<div class="price_box">
+											@if (isset($values['price_regular']))
+												@if (isset($values['price_sale']) && $values['price_sale'] < $values['price_regular'])
+													<span
+														class="new_price">{{ number_format($values['price_sale'], 0, '', '.') }}đ</span>
+													<span
+														class="old_price">{{ number_format($values['price_regular'], 0, '', '.') }}đ</span>
+												@else
+													<span
+														class="new_price">{{ number_format($values['price_regular'], 0, '', '.') }}đ</span>
+												@endif
+											@endif
+										</div>
+										<ul>
+											<li><a href="{{url('products/' . $values['id']) }}" class="btn_1">Details</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							@endforeach
+							<!-- /row_item -->
+							<div class="pagination__wrapper">
+								<ul class="pagination">
+
+									@for ($i = 1; $i <= $totalPage; $i++)
+										<li class="page-item{{ $currentPage == $i ? ' active' : '' }}">
+											<a class="page-link" href="{{ url('products?page=' . $i) }}">{{ $i }}</a>
+										</li>
+									@endfor
+
+								</ul>
+							</div>
+						</div>
+						<!-- /col -->
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+		</main>
+		<!-- /main -->
+
+		<footer class="revealed">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-6">
@@ -766,19 +321,20 @@
 				</div>
 			</div>
 		</footer>
-	<!--/footer-->
+		<!--/footer-->
 	</div>
 	<!-- page -->
-	
+
 	<div id="toTop"></div><!-- Back to top button -->
-	
+
 	<!-- COMMON SCRIPTS -->
-    <script src="{{asset('assets/client/js/common_scripts.min.js')}}"></script>
-    <script src="{{asset('assets/client/js/main.js')}}"></script>
-	
+	<script src="{{asset('assets/client/js/common_scripts.min.js')}}"></script>
+	<script src="{{asset('assets/client/js/main.js')}}"></script>
+
 	<!-- SPECIFIC SCRIPTS -->
 	<script src="{{asset('assets/client/js/sticky_sidebar.min.js')}}"></script>
 	<script src="{{asset('assets/client/js/specific_listing.js')}}"></script>
-		
+
 </body>
+
 </html>

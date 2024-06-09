@@ -22,14 +22,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="(/css/bootstrap.min.css)" rel="stylesheet">
-    <link href="('/css/style.css')" rel="stylesheet">
+    <link href="{{asset('assets/client/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/client/css/style.css')}}" rel="stylesheet">
 
 	<!-- SPECIFIC CSS -->
-    <link href="('/css/product_page.css')" rel="stylesheet">
+    <link href="{{asset('assets/client/css/product_page.css')}}" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="(/css/custom.css)" rel="stylesheet">
+    <link href="{{asset('assets/client/css/custom.css')}}" rel="stylesheet">
 
 </head>
 
@@ -44,7 +44,7 @@
 				<div class="row small-gutters">
 					<div class="col-xl-3 col-lg-3 d-lg-flex align-items-center">
 						<div id="logo">
-							<a href="{{ url() }}"><img src="../img/logo.svg" alt="" width="100" height="35"></a>
+							<a href="{{ url() }}"><img src="{{asset('assets/img/logo.svg')}}" alt="" width="100" height="35"></a>
 						</div>
 					</div>
 					<nav class="col-xl-6 col-lg-7">
@@ -58,7 +58,7 @@
 						<!-- Mobile menu button -->
 						<div class="main-menu">
 							<div id="header_menu">
-								<a href="{{ url() }}"><img src="img/logo_black.svg" alt="" width="100" height="35"></a>
+								<a href="{{ url() }}"><img src="{{asset('assets/img/logo_black.svg')}}" alt="" width="100" height="35"></a>
 								<a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
 							</div>
 							<ul>
@@ -92,62 +92,68 @@
 		<!-- /main_header -->
 
 		<div class="main_nav Sticky">
-			<div class="container">
-				<div class="row small-gutters">
-					<div class="col-xl-3 col-lg-3 col-md-3">
-						<nav class="categories">
-							<ul class="clearfix">
-								<li><span>
-										<a href="#">
-											<span class="hamburger hamburger--spin">
-												<span class="hamburger-box">
-													<span class="hamburger-inner"></span>
+				<div class="container">
+					<div class="row small-gutters">
+						<div class="col-xl-3 col-lg-3 col-md-3">
+							<nav class="categories">
+								<ul class="clearfix">
+									<li><span>
+											<a href="#">
+												<span class="hamburger hamburger--spin">
+													<span class="hamburger-box">
+														<span class="hamburger-inner"></span>
+													</span>
 												</span>
-											</span>
-											Categories
-										</a>
-									</span>
-									<div id="menu">
+												Categories
+											</a>
+										</span>
+										<div id="menu">
 										<ul>
+											<li><span><a href="#0">Laptop</a></span></li>
+											<li><span><a href="#">Điện thoại di động</a></span></li>
+											<li><span><a href="#">Women</a></span></li>
+											<li><span><a href="#">Boys</a></span></li>
+											<li><span><a href="#">Girls</a></span></li>
+											<li><span><a href="#">Customize</a></span></li>
 										</ul>
 									</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
+							<div class="custom-search-input">
+								<input type="text" placeholder="Search over 10.000 products">
+								<button type="submit"><i class="header-icon_search_custom"></i></button>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-2 col-md-3">
+							<ul class="top_tools">
+								<li>
+									<div class="dropdown dropdown-cart">
+										<a href="" class="cart_bt"></a>
+									</div>
+									<!-- /dropdown-cart-->
 								</li>
+								<li>
+									<div class="dropdown dropdown-access">
+										<a href="{{ url('login') }}" class="access_link"><span>Account</span></a>
+									</div>
+									<!-- /dropdown-access-->
+								</li>
+
+
 							</ul>
-						</nav>
-					</div>
-					<div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
-						<div class="custom-search-input">
-							<input type="text" placeholder="Search over 10.000 products">
-							<button type="submit"><i class="header-icon_search_custom"></i></button>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-2 col-md-3">
-						<ul class="top_tools">
-							<li>
-								<div class="dropdown dropdown-cart">
-									<a href="cart.html" class="cart_bt"><strong>2</strong></a>
-								</div>
-								<!-- /dropdown-cart-->
-							</li>
-							<li>
-								<div class="dropdown dropdown-access">
-									<a href="account.html" class="access_link"><span>Account</span></a>
-								</div>
-								<!-- /dropdown-access-->
-							</li>
-
-
-						</ul>
-					</div>
+					<!-- /row -->
 				</div>
-				<!-- /row -->
+				<div class="search_mob_wp">
+					<input type="text" class="form-control" placeholder="Search over 10.000 products">
+					<input type="submit" class="btn_1 full-width" value="Search">
+				</div>
+				<!-- /search_mobile -->
 			</div>
-			<div class="search_mob_wp">
-				<input type="text" class="form-control" placeholder="Search over 10.000 products">
-				<input type="submit" class="btn_1 full-width" value="Search">
-			</div>
-			<!-- /search_mobile -->
-		</div>
 		<!-- /main_nav -->
 	</header>
 	<!-- /header -->
@@ -155,17 +161,17 @@
 	<main>
 	    <div class="container">
 	       
-	        
-	        <div class="row">
-	            <div class="col-lg-6 magnific-gallery">
+
+	        <div class="row mt-5">
+	            <div class="col-lg-6">
 	                <p>
-	                    <a href="img/products/shoes/large/1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/products/shoes/large/1.jpg" alt="" class="img-fluid"></a>
+	                    <a href="{{asset($product['img_thumbnail'])}}"><img src="{{asset($product['img_thumbnail'])}}" alt=""></a>
 	                </p>
 	            </div>
 	            <div class="col-lg-6" id="sidebar">
 	                <div class="breadcrumbs">
 	                    <ul>
-	                        <li><a href="#">Home</a></li>
+	                        <li><a href="{{url()}}">Home</a></li>
 	                        <li><a href="#">Category</a></li>
 	                        <li>Page active</li>
 	                    </ul>
@@ -397,11 +403,12 @@
 
 	
 	<!-- COMMON SCRIPTS -->
-    <script src="js/common_scripts.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{asset('assets/client/js/common_scripts.min.js')}}"></script>
+    <script src="{{asset('assets/client/js/main.js')}}"></script>
 
     <!-- SPECIFIC SCRIPTS -->
-	<script src="js/sticky_sidebar.min.js"></script>
+	<script src="{{asset('assets/client/js/sticky_sidebar.min.js')}}"></script>
+	
 	<script>
 		// Sticky sidebar
 		$('#sidebar_fixed').theiaStickySidebar({

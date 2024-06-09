@@ -35,8 +35,7 @@
             </a>
             <ul>
                 <li><a class="" href="{{ url('admin/categories') }}">Danh sách</a></li>
-                <li><a href="index_2.html">Default</a></li>
-                <li><a href="index_3.html">Dark Menu</a></li>
+                <li><a href="{{ url('admin/categories/create') }}">Thêm mới</a></li>
             </ul>
         </li>
 
@@ -45,12 +44,11 @@
                 <div class="icon_menu">
                 <img src="{{ asset('assets/admin/img/menu-icon/15.svg') }}" alt>
                 </div>
-                <span>Quản lý Sản phảm</span>
+                <span>Quản lý Sản phẩm</span>
             </a>
             <ul>
-                <li><a class="active" href="index-2.html">Sales</a></li>
-                <li><a href="index_2.html">Default</a></li>
-                <li><a href="index_3.html">Dark Menu</a></li>
+                <li><a href="{{ url('admin/products') }}">Danh sách</a></li>
+                <li><a href="{{ url('admin/products/create') }}">Thêm mới</a></li>
             </ul>
         </li>
 

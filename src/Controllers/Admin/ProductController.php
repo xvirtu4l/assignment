@@ -20,10 +20,11 @@ class ProductController extends Controller
 
     public function index()
     {
-        $products = $this->product->all();
+        [$products, $totalPage] = $this->product->paginate($_GET['page'] ?? 1);
 
         $this->renderViewAdmin('products.index', [
-            'products' => $products
+            'products' => $products,
+            'totalPage' => $totalPage
         ]);
     }
 
