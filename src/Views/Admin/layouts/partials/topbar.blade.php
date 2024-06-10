@@ -115,7 +115,7 @@
                         </li>
                     </div>
                     <div class="profile_info">
-                        <img src="{{ asset($_SESSION['user']['avatar']) }}" alt="#">
+                        <img src="{{ asset('assets/img/avatar.jpg') }}" alt="#">
                         <div class="profile_info_iner">
                             <div class="profile_author_name">
                                 <p>Admin </p>

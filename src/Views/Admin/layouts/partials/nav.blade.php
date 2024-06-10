@@ -7,9 +7,17 @@
     </div>
     <ul id="sidebar_menu">
     <li class>
-            <a href="{{url('admin')}}" aria-expanded="false">
+            <a href="{{url()}}" aria-expanded="false">
                 <div class="icon_menu">
                 <img src="{{ asset('assets/admin/img/menu-icon/dashboard.svg') }}" alt>
+                </div>
+                <span>Trang chủ client</span>
+            </a>
+        </li>
+    <li class>
+            <a href="{{url('admin')}}" aria-expanded="false">
+                <div class="icon_menu">
+                <img src="{{ asset('assets/admin/img/menu-icon/2.svg') }}" alt>
                 </div>
                 <span>Dashboard</span>
             </a>

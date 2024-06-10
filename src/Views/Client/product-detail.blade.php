@@ -101,21 +101,6 @@
 					<div class="row small-gutters">
 						<div class="col-xl-3 col-lg-3 col-md-3">
 							<nav class="categories">
-								<ul class="clearfix">
-									<li><span>
-											<a href="#">
-												<span class="hamburger hamburger--spin">
-													<span class="hamburger-box">
-														<span class="hamburger-inner"></span>
-													</span>
-												</span>
-												Categories
-											</a>
-										</span>
-										<div id="menu">
-										</div>
-									</li>
-								</ul>
 							</nav>
 						</div>
 						<div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
@@ -170,8 +155,8 @@
 						<div class="breadcrumbs">
 							<ul>
 								<li><a href="{{url()}}">Home</a></li>
-								<li><a href="#">Category</a></li>
-								<li>Page active</li>
+								<li><a href="{{url('products')}}">Products</a></li>
+								<li><a href="{{url('products/' . $product['id'])}}">{{$product['id']}}</a></li>
 							</ul>
 						</div>
 						<!-- /page_header -->
