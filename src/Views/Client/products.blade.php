@@ -101,23 +101,7 @@
 					<div class="row small-gutters">
 						<div class="col-xl-3 col-lg-3 col-md-3">
 							<nav class="categories">
-								<ul class="clearfix">
-									<li><span>
-											<a href="#">
-												<span class="hamburger hamburger--spin">
-													<span class="hamburger-box">
-														<span class="hamburger-inner"></span>
-													</span>
-												</span>
-												Categories
-											</a>
-										</span>
-										<div id="menu">
-											<ul>
-											</ul>
-										</div>
-									</li>
-								</ul>
+								
 							</nav>
 						</div>
 						<div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
@@ -164,11 +148,11 @@
 					<div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0)">
 						<div class="container">
 							<div class="d-flex justify-content-center">
-								<h1>Shoes - Grid listing</h1>
+								<h1>Tất cả sản phẩm</h1>
 							</div>
 						</div>
 					</div>
-					<img src="img/bg_cat_shoes.jpg" class="img-fluid" alt="">
+					<img src="{{asset('assets/img/bg_cat_shoes.jpg')}}" class="img-fluid" alt="">
 				</div>
 				<!-- /top_banner -->
 				<div id="stick_here"></div>

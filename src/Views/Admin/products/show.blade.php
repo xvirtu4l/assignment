@@ -17,7 +17,7 @@ Chi tiết danh mục
             </div>
 
             <div class="white_card_body">
-
+            <a class="btn btn-primary" href="{{ url('admin/products') }}">Quay lại danh sách</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
@@ -30,7 +30,13 @@ Chi tiết danh mục
                             @foreach ($product as $field => $value)
                                 <tr>
                                     <td>{{ $field }}</td>
-                                    <td>{{ $value }}</td>
+                                    @if ($field === 'img_thumbnail' && $value !== null)
+                                            <td><img src="{{ asset($value) }}" alt="img_thumbnail" style="width: 100px; height: 100px;"></td>
+                                        @elseif ($field === 'img_thumbnail' && $value === null)
+                                            <td>No Thumbnail</td>
+                                        @else
+                                            <td>{{ $value }}</td>
+                                        @endif
                                 </tr>
                             @endforeach
                         </tbody>

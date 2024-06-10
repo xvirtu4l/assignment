@@ -30,7 +30,7 @@ Chỉnh sửa danh mục
                                     @endphp
                                 </div>
                 @endif
-
+                <a class="btn btn-primary" href="{{ url('admin/products') }}">Quay lại danh sách</a>
                 <div class="table-responsive">
                 <form action="{{ url("admin/products/{$product['id']}/update") }}" enctype="multipart/form-data"
                         method="POST">

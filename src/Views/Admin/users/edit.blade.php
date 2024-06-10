@@ -30,7 +30,7 @@ Thêm người dùng
                                     @endphp
                                 </div>
                 @endif
-
+                <a class="btn btn-primary" href="{{ url('admin/users') }}">Quay lại danh sách</a>
                 <div class="table-responsive">
                     <form action="{{ url("admin/users/{$user['id']}/update") }}" enctype="multipart/form-data"
                         method="POST">

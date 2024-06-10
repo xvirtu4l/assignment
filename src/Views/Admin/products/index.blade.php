@@ -48,7 +48,7 @@
                                         <td>{{$product['c_name']}}</td>
                                         <td>{{$product['name']}}</td>
                                         <td>
-                                            <img src="{{asset($product['img_thumbnail'])}}" alt="">
+                                            <img src="{{asset($product['img_thumbnail'])}}" alt="" width="100px">
                                         </td>
                                         <td>{{$product['price_regular']}}</td>
                                         <td>{{$product['price_sale']}}</td>

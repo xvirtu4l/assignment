@@ -17,7 +17,7 @@ Chi tiết người dùng
             </div>
 
             <div class="white_card_body">
-
+            <a class="btn btn-primary" href="{{ url('admin/users') }}">Quay lại danh sách</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
@@ -32,7 +32,7 @@ Chi tiết người dùng
                                     <tr>
                                         <td>{{ $field }}</td>
                                         @if ($field === 'avatar' && $value !== null)
-                                            <td><img src="{{ $value }}" alt="Avatar" style="width: 100px; height: 100px;"></td>
+                                            <td><img src="{{ asset($value) }}" alt="Avatar" style="width: 100px; height: 100px;"></td>
                                         @elseif ($field === 'avatar' && $value === null)
                                             <td>No Avatar</td>
                                         @else

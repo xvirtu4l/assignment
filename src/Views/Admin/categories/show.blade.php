@@ -17,7 +17,7 @@ Chi tiết danh mục
             </div>
 
             <div class="white_card_body">
-
+            <a class="btn btn-primary" href="{{ url('admin/categories') }}">Quay lại danh sách</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
